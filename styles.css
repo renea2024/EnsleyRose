@@ -1,11 +1,14 @@
-body {
 
-  text-align: center;
-  font-size: 24px;
-  
+    html{background-image:url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
 }
 
-
+body{text-align: center;
+font-size: 24px;
+}
 p{color:rgb(16, 16, 49);}
 h1{font-weight: 700;
 color: rgb(241, 147, 162);
@@ -51,10 +54,9 @@ height: 100%;}
 
 /*Welcome Section*/
 #welcome {height: 700px;
-   
+    background-image: url(1);
     padding-top: 100px;}
-
-#welcome.content {margin: auto;
+    #welcome .content {margin: auto;
         width: 100%;
         background-color: rgb(241, 147, 162);
         color:white;
