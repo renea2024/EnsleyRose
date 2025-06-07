@@ -74,5 +74,14 @@ header img {
 /* Welcome Section */
 #welcome {
   height: 700px;
-  /* Remove or*
+  /* Remove or update this background if needed */
+  /* background-image: url(1); */  /* Removed invalid url */
+  padding-top: 100px;
+}
 
+#welcome .content {
+  margin: auto;
+  width: 100%;
+  background-color: rgb(241, 147, 162);
+  color: white;
+}
