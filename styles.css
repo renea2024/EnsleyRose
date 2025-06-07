@@ -1,63 +1,78 @@
-html{background-image:url('background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    
+body {
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed; /* Optional: remove if you want scrolling background */
+  text-align: center;
+  font-size: 24px;
 }
 
-body{text-align: center;
-font-size: 24px;
-}
-p{color:rgb(16, 16, 49);}
-h1{font-weight: 700;
-color: rgb(241, 147, 162);
-text-align:center;}
-
-h2{font-weight: 500;}
-ul{list-style:none;
-margin:0;}
-a{text-decoration: none;}
-
-
-/*Header Section*/
-header{
-    z-index:1;
-    height:auto;}
-header img{height: 120px;
-    padding-left: 10px;
-    float:left;
-    width:auto;
-   
+p {
+  color: rgb(16, 16, 49);
 }
 
-
-.navbar ul{display: flex;
-    padding-top:50px;
-    
-
-
-}
-.navbar a {color: rgb(241, 147, 162);
-padding: 10px;
-margin: 5px 0;
-}
-.navbar a:hover {border-bottom: 2px rgb(126, 111, 27) solid;}
-.navbar .flex{justify-content: space-between;
-float: right;
+h1 {
+  font-weight: 700;
+  color: rgb(241, 147, 162);
+  text-align: center;
 }
 
-.flex {display: flex;
-justify-content: center;
-align-items:center;
-height: 100%;}
+h2 {
+  font-weight: 500;
+}
 
-/*Welcome Section*/
-#welcome {height: 700px;
-    background-image: url(1);
-    padding-top: 100px;}
-    #welcome .content {margin: auto;
-        width: 100%;
-        background-color: rgb(241, 147, 162);
-        color:white;
-    
-    }
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header Section */
+header {
+  z-index: 1;
+  height: auto;
+}
+
+header img {
+  height: 120px;
+  padding-left: 10px;
+  float: left;
+  width: auto;
+}
+
+.navbar ul {
+  display: flex;
+  padding-top: 50px;
+}
+
+.navbar a {
+  color: rgb(241, 147, 162);
+  padding: 10px;
+  margin: 5px 0;
+}
+
+.navbar a:hover {
+  border-bottom: 2px rgb(126, 111, 27) solid;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+  float: right;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Welcome Section */
+#welcome {
+  height: 700px;
+  /* Remove or*
+
