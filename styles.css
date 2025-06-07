@@ -1,11 +1,11 @@
-html{background-image:url('background.jpg');
+
+    
+
+body{background-image:url('background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    
-}
-
-body{text-align: center;
+    text-align: center;
 font-size: 24px;
 }
 p{color:rgb(16, 16, 49);}
