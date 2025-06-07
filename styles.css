@@ -1,24 +1,11 @@
 body {
-  position: relative;
-  background-image: url("background.jpg");
-  background-repeat: repeat;
-  background-position: center center; /* center horizontally & vertically */
-  background-size: auto;              /* keeps image natural size */
-  background-attachment: fixed;       /* fixes image so it doesn’t scroll */
+
   text-align: center;
   font-size: 24px;
-  z-index: 0;
+  
 }
 
-body::before {
-  content: "";
-  position: fixed;
-  top: 0; left: 0;
-  width: 100vw; height: 100vh;
-  background: rgba(255, 255, 255, 0.4); /* translucent white overlay */
-  z-index: -1;
-  pointer-events: none;
-}
+
 p{color:rgb(16, 16, 49);}
 h1{font-weight: 700;
 color: rgb(241, 147, 162);
