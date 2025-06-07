@@ -1,12 +1,27 @@
 
     
+body {
+  position: relative; /* needed for the overlay */
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  font-size: 24px;
+  z-index: 0; /* to keep stacking order */
+}
 
-body{background-image:url('background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    text-align: center;
-font-size: 24px;
+body::before {
+  content: "";
+  position: fixed;  /* fixed so it covers entire viewport */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.4); /* white overlay with 40% opacity */
+  z-index: -1; /* behind body content but above background image */
+  pointer-events: none; /* so clicks go through */
 }
 p{color:rgb(16, 16, 49);}
 h1{font-weight: 700;
