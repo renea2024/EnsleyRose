@@ -1,7 +1,7 @@
 body {
   position: relative;
   background-image: url("background.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: center center; /* center horizontally & vertically */
   background-size: auto;              /* keeps image natural size */
   background-attachment: fixed;       /* fixes image so it doesn’t scroll */
