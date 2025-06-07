@@ -51,11 +51,11 @@ justify-content: center;
 align-items:center;
 height: 100%;}
 
-/*Mission Section*/
-#mission {height: 700px;
+/*Welcome Section*/
+#welcome {height: 700px;
     background-image: url(1);
     padding-top: 100px;}
-    #mission .content {margin: auto;
+    #welcome .content {margin: auto;
         width: 100%;
         background-color: rgb(241, 147, 162);
         color:white;
