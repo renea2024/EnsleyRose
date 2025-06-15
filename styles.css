@@ -1,64 +1,182 @@
-
-    html{background-image:url('background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    
+/* ===== Base Styles ===== */
+html {
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  scroll-behavior: smooth;
 }
 
-body{text-align: center;
-font-size: 24px;
-}
-p{color:rgb(16, 16, 49);}
-h1{font-weight: 700;
-color: rgb(241, 147, 162);
-text-align:center;}
-
-h2{font-weight: 500;}
-ul{list-style:none;
-margin:0;}
-a{text-decoration: none;}
-
-
-/*Header Section*/
-header{
-    z-index:1;
-    height:auto;}
-header img{height: 120px;
-    padding-left: 10px;
-    float:left;
-    width:auto;
-   
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(16, 16, 49);
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
-
-.navbar ul{display: flex;
-    padding-top:50px;
-    
-
-
-}
-.navbar a {color: rgb(241, 147, 162);
-padding: 10px;
-margin: 5px 0;
-}
-.navbar a:hover {border-bottom: 2px rgb(126, 111, 27) solid;}
-.navbar .flex{justify-content: space-between;
-float: right;
+h1, h2, h3 {
+  margin: 0.5em 0;
 }
 
-.flex {display: flex;
-justify-content: center;
-align-items:center;
-height: 100%;}
+h1 {
+  font-weight: 700;
+  color: rgb(241, 147, 162);
+}
 
-/*Welcome Section*/
-#welcome {height: 700px;
-    background-image: url(1);
-    padding-top: 100px;}
-    #welcome .content {margin: auto;
-        width: 100%;
-        background-color: rgb(241, 147, 162);
-        color:white;
-    
-    }
+h2 {
+  font-weight: 500;
+  color: rgb(16, 16, 49);
+}
+
+h3 {
+  font-weight: 600;
+  color: rgb(241, 147, 162);
+}
+
+p {
+  max-width: 800px;
+  margin: 0 auto 1.5em;
+  line-height: 1.6;
+}
+
+a {
+  color: rgb(241, 147, 162);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  border-bottom: 2px solid rgb(126, 111, 27);
+}
+
+/* ===== Header and Navbar ===== */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+header img {
+  height: 80px;
+  width: auto;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.navbar a:hover {
+  background-color: rgba(241, 147, 162, 0.1);
+}
+
+/* ===== Welcome Section ===== */
+#welcome {
+  height: 700px;
+  background: url('1') no-repeat center center/cover;
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#welcome .content {
+  background-color: rgb(241, 147, 162);
+  color: white;
+  padding: 2rem;
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== February Favorites Section ===== */
+#favorites {
+  padding: 4rem 2rem;
+  background-color: rgba(241, 147, 162, 0.1);
+}
+
+#favorites h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: rgb(241, 147, 162);
+}
+
+.favorites-row {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.favorite-item {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 250px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.favorite-item:hover {
+  transform: translateY(-5px);
+}
+
+.favorite-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== Contact Section ===== */
+#contact {
+  padding: 3rem 2rem;
+  background-color: white;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #welcome {
+    height: auto;
+    padding: 4rem 1rem;
+  }
+
+  .favorites-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
