@@ -2,15 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ensley Rose Boutique</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- Background Wrapper -->
+  <div class="background-wrapper"></div>
 
-  <!-- Header -->
+  <!-- Header with logo and nav -->
   <header>
-    <img src="logoensleyrose.jpg" alt="Ensley Rose Logo">
+    <img src="logoensleyrose.jpg" alt="Ensley Rose Logo" />
     <nav class="navbar">
       <ul>
         <li><a href="#welcome">Home</a></li>
@@ -21,43 +23,51 @@
   </header>
 
   <!-- Welcome Section -->
-  <section id="welcome">
+  <section id="welcome" aria-label="Welcome Section">
     <div class="content">
-      <h1>Welcome to Ensley Rose</h1>
-      <p>Charming fashion for girls who love to twirl. Browse seasonal picks and boutique favorites hand-picked with love.</p>
+      <h1>Welcome to Ensley Rose Boutique</h1>
+      <p>Discover charming and comfortable clothing for your little girls, perfect for February and beyond. Quality styles with love and care.</p>
     </div>
   </section>
 
   <!-- February Favorites Section -->
-  <section id="favorites">
+  <section id="favorites" aria-label="February Favorites">
     <h2>February Favorites</h2>
     <div class="favorites-row">
       <div class="favorite-item">
-        <img src="https://images.unsplash.com/photo-1618354691263-3f7b9e1f6353" alt="Pink Ruffle Dress">
-        <h3>Pink Ruffle Dress</h3>
-        <p>$32.00</p>
-        <p>Soft cotton dress with ruffle sleeves — perfect for Valentine's outings.</p>
+        <img src="images/dressesinboutique.jpg" alt="Dresses hanging in boutique" />
+        <h3>Colorful Polka Dot Dress</h3>
+        <p>Soft and playful polka dot dress, perfect for chilly February days.</p>
+        <p class="price">$32.00</p>
       </div>
       <div class="favorite-item">
-        <img src="https://images.unsplash.com/photo-1604079621479-ef97b05aa170" alt="Floral Tulle Skirt">
-        <h3>Floral Tulle Skirt</h3>
-        <p>$28.00</p>
-        <p>Pastel pink and purple florals with a comfortable elastic waist.</p>
-      </div>
+      <img src="images/pinksweaterandshoes" alt="Pink sweater and shoes" />
+      <h3>Joyful Winter Sweaters</h3>
+      <p>Cozy and colorful sweaters to keep your little ones warm and stylish.</p>
+      <p class="price">$28.00</p>
       <div class="favorite-item">
-        <img src="https://images.unsplash.com/photo-1584467735871-76a3597b989e" alt="Heart Print Hoodie">
-        <h3>Heart Print Hoodie</h3>
-        <p>$24.00</p>
-        <p>Cozy and cute with all-over heart print. Great for chilly days!</p>
-      </div>
+      <img src="images/whiteshoespinkflower.jpg" alt="Pink sweater and shoes" />
+      <h3>Joyful Winter Sweaters</h3>
+      <p>Cozy and colorful sweaters to keep your little ones warm and stylish.</p>
+      <p class="price">$28.00</p>
+
+    </div>
+  </div>
+</section>
+
+    </div>
+  </div>
+</section>
+   
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact">
-    <h2>Get in Touch</h2>
-    <p>Email us at <a href="mailto:info@ensleyrose.com">info@ensleyrose.com</a> or follow us on Instagram @EnsleyRoseKids</p>
+  <section id="contact" aria-label="Contact Information">
+    <h2>Contact Us</h2>
+    <p>Have questions? Reach out and we’ll be happy to help!</p>
+    <p>Email: <a href="mailto:info@ensleyrose.com">info@ensleyrose.com</a></p>
+    <p>Phone: <a href="tel:+1234567890">(123) 456-7890</a></p>
   </section>
-
 </body>
 </html>
